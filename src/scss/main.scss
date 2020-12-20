@@ -25,22 +25,25 @@ body {
 .form {
     font-size: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 30px;
 
       &__title {
-      font-size: 35px;
+      font-size: 25px;
   }
 }
 
 .button-add {
   display: block;
+  float: right;
   width: 100px;
   margin: 0 auto 16px;
   box-sizing: border-box;
+  cursor: pointer;
   padding: 12px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  border-radius: 4px; 
 }
