@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
+    <title>Find Your Coffee Match</title>
+    <meta name="description" content="Aplikacja wspomagająca wybór kawy" />
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="Find Your Coffee Match" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Aplikacja wspomagająca wybór kawy" />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://elizaosinska.github.io/coffeematch/" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta
       property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
+      content="https://elizaosinska.github.io/coffeematch/public/og.png"
     />
 
     <!-- uncomment the line below to enable PWA  -->
@@ -145,9 +145,16 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <main class="app">
+      <h1 class="app__title">Find your coffee match</h1>
+      <form class="form">
+        <h2 class="form__title">Wybierz rodzaj kawy</h2>
+        <input type="radio" name="gender" value="arabica">
+        <label for="arabica">Arabica</label><br>
+        <input type="radio" name="gender" value="robusta">
+        <label for="robusta">Robusta</label><br>
+      </form> 
+      <button class="button-add button-add--js">Dalej</button>
+    </main>
   </body>
 </html>

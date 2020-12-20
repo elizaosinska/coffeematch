@@ -1,13 +1,46 @@
 @import "~normalize.css";
-
-@import "_variables";
-@import "modules/hello.scss";
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.app {
+  &__title {
+    font-size: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 64px;
+    margin: 0 0 64px;
+    text-align: center;
+  }
+}
+
+.form {
+    font-size: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+
+      &__title {
+      font-size: 35px;
+  }
+}
+
+.button-add {
+  display: block;
+  width: 100px;
+  margin: 0 auto 16px;
+  box-sizing: border-box;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
 }
