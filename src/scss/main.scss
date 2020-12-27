@@ -12,33 +12,66 @@ body {
 }
 
 .app {
+  width: 500px;
+  overflow: hidden;
   &__title {
     font-size: normal;
     font-weight: 700;
     font-size: 55px;
     line-height: 64px;
-    margin: 0 0 64px;
+    margin: 0 0 64px 0;
     text-align: center;
+  }
+
+  &__progress {
+    display: flex;
+    margin: 40px 0px;
   }
 }
 
+.step {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+  
+.bullet {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px; 
+
+    &__span{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
 .form {
-    font-size: normal;
+  display: flex;
+  width: 400%;
+  &__title {
+    font-size: 25px;
     font-weight: 400;
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 30px;
-
-      &__title {
-      font-size: 25px;
   }
 }
 
 .button-add {
-  display: block;
+  display: flex;
   float: right;
   width: 100px;
   margin: 0 auto 16px;
+  margin-left: 3px;
   box-sizing: border-box;
   cursor: pointer;
   padding: 12px;
@@ -47,3 +80,23 @@ body {
   font-size: 18px;
   border-radius: 4px; 
 }
+
+.button-remove {
+  display: flex;
+  float: right;
+  width: 100px;
+  margin: 0 auto 16px;
+  margin-right: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 4px; 
+}
+.page {
+  width: 100%;
+  transition: center 0.3s ease-in-out;
+}
+

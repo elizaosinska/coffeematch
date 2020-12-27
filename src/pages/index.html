@@ -25,6 +25,7 @@
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="apple-touch-startup-image" href="pwa/apple-splash-2048-2732.png"
     media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
   <link rel="apple-touch-startup-image" href="pwa/apple-splash-2732-2048.png"
@@ -70,50 +71,65 @@
 <body>
   <main class="app">
     <h1 class="app__title">Find your coffee match</h1>
+    <div class="app__progress">
+      <div class="step">
+        <div class="bullet"><span>1</span></div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <div class="bullet"><span>2</span></div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <div class="bullet"><span>3</span></div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <div class="bullet"><span>4</span></div>
+        <div class="check fas fa-check"></div>
+      </div>
+    </div>
     <form class="form">
       <div class="page">
-      <h2 class="form__title">Wybierz ulubiony gatunek kawy</h2>
-      <input type="radio" name="gender" value="arabica">
-      <label for="arabica">Arabica</label><br>
-      <input type="radio" name="gender" value="robusta">
-      <label for="robusta">Robusta</label><br>
+        <h2 class="form__title">Wybierz ulubiony gatunek kawy</h2>
+        <input type="radio" name="gender" value="arabica">
+        <label for="arabica">Arabica</label><br>
+        <input type="radio" name="gender" value="robusta">
+        <label for="robusta">Robusta</label><br>
+        <button class="button-add button-add--js">Dalej</button>
+      </div>
+      <div class="page">
+        <h2 class="form__title">Wybierz kraj pochodzenia kawy</h2>
+        <input type="radio" name="country" value="ethiopia">
+        <label for="ethiopia">Etiopia</label><br>
+        <input type="radio" name="country" value="brazil">
+        <label for="brazil">Brazylia</label><br>
+        <input type="radio" name="country" value="peru">
+        <label for="peru">Peru</label><br>
+        <button class="button-add button-add--js">Dalej</button>
+        <button class="button-remove button-remove--js">Wróć</button>
+      </div>
+      <div class="page">
+        <h2 class="form__title">Wybierz preferowaną kwasowość</h2>
+        <input type="radio" name="acidity" value=" ">
+        <label for=" ">......</label><br>
+        <input type="radio" name="acidity" value=" a">
+        <label for=" ">......</label><br>
+        <button class="button-add button-add--js">Dalej</button>
+        <button class="button-remove button-remove--js">Wróć</button>
+      </div>
+      <div class="page">
+        <h2 class="form__title">Wybierz aromat kawy</h2>
+        <input type="radio" name="aromar" value=" ">
+        <label for=" ">......</label><br>
+        <input type="radio" name="aroma" value=" ">
+        <label for=" ">......</label><br>
+        <button class="button-add button-add--js">Dalej</button>
+        <button class="button-remove button-remove--js">Wróć</button>
+      </div>
     </form>
-    <button class="button-add button-add--js">Dalej</button>
-  </div> 
-    <div class="page">  
-      <h2 class="form__title">Wybierz kraj pochodzenia kawy</h2>
-      <input type="radio" name="country" value="ethiopia">
-      <label for="ethiopia">Etiopia</label><br>
-      <input type="radio" name="country" value="brazil">
-      <label for="brazil">Brazylia</label><br>
-      <input type="radio" name="country" value="peru">
-      <label for="peru">Peru</label><br>
-    </form>
-    <button class="button-add button-add--js">Dalej</button>
-    <button class="button-remove button-remove--js">Wróć</button>
-  </div>
-    <div class="page">
-      <h2 class="form__title">Wybierz preferowaną kwasowość</h2>
-      <input type="radio" name="acidity" value=" ">
-      <label for=" ">......</label><br>
-      <input type="radio" name="acidity" value=" a">
-      <label for=" ">......</label><br>
-    </form>
-    <button class="button-add button-add--js">Dalej</button>
-    <button class="button-remove button-remove--js">Wróć</button>
-  </div>
-    <div class="page">
-      <h2 class="form__title">Wybierz aromat kawy</h2>
-      <input type="radio" name="aromar" value=" ">
-      <label for=" ">......</label><br>
-      <input type="radio" name="aroma" value=" ">
-      <label for=" ">......</label><br>
-    </form>
-    <button class="button-add button-add--js">Dalej</button>
-    <button class="button-remove button-remove--js">Wróć</button>
-  </div>
+    </div>
   </main>
-</body>
 </body>
 
 </html>
